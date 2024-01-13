@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>College Helper</title>
+    <!--linking style.css with index.html-->
+    <link rel="stylesheet" href="style.css">
+    <!--linking font awesome cdn reference-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- linking google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital@1&family=Potta+One&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Aoboshi+One&family=Lato&family=Noto+Serif:ital@1&family=Potta+One&display=swap"
+        rel="stylesheet">
+
+    <!-- For Adding Carousel from flickity -->
+    <!-- CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+    <!-- JavaScript -->
+    <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+
+    <!-- TO add favicon -->
+    <link rel="icon" type="image/x-icon" href="logo.png">
+    <!-- Adding Bootsrap cdn link -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+</head>
+
+<body>
+    <!-- CREATING HEADER -->
+    <header>
+        <span>
+            <h1>COLLEGE HELPER</h1>
+        </span>
+    </header>
+
+    <!--CREATING MAIN NAVIGATION BAR -->
+    <nav>
+        <a href="#">Home</a>
+        <a href="review.html" target="_blank">College Review</a>
+        <a href="blogs.html">Blogs</a>
+        <a href="study_material.html" target="_blank">Notes</a>
+        <!-- <button class="toggle"><i class="fa-solid fa-moon"></i> Dark Mode</button> -->
+        <a href="sign.html" target="_blank">Login/Sign Up</a>
+
+    </nav>
+
+    <!--CREATING MAIN SECTION OF WEBSITE-->
+    <main>
+        <!-- CREATING COURSES SECTION -->
+        <section>
+            <span>
+                <h2>Batches</h2>
+            </span>
+            <video src="1.mp4" poster="maxresdefault.jpg" width="33%" controls></video>
+            <video src="2.mp4" poster="1699508541phpKGjrWM.jpeg" width="33%" controls></video>
+            <video src="3.mp4" poster="13.jpg" width="33%" controls></video>
+            <video src="4.mp4" poster="Artificial-Intelligence-Courses-after-12th-01-1024x536.webp" width="33%"
+                controls></video>
+            <video src="5.mp4" poster="11.jpg" width="33%" controls></video>
+            <video src="6.mp4" poster="main-qimg-f9514ea83444ef5dfded019d798ca48b-lq.jpg" width="33%" controls></video>
+        </section>
+
+        <!-- Image Gallery -->
+        <h1 id="gal">POPULAR COURSES</h1>
+        <div class="gallery">
+            <div class="image-box img_1">
+                <img src="maxresdefault.jpg" alt="">
+            </div>
+            <div class="image-box">
+                <img src="1699508541phpKGjrWM.jpeg" alt="">
+            </div>
+            <div class="image-box">
+                <img src="A-Guide-to-Data-Science-and-its-Course.png" alt="">
+            </div>
+            <div class="image-box">
+                <img src="Artificial-Intelligence-Courses-after-12th-01-1024x536.webp" alt="">
+            </div>
+            <div class="image-box">
+                <img src="Best-Mobile-App-Development-Courses.jpg" alt="">
+            </div>
+            <div class="image-box">
+                <img src="main-qimg-f9514ea83444ef5dfded019d798ca48b-lq.jpg" alt="">
+            </div>
+        </div>
+
+
+        <!-- CREATING COLLEGE REVIEWS SECTION -->
+        <section>
+            <span>
+                <h2>College Reviews</h2>
+            </span>
+            <iframe class="gap" width="60%" height="74%"
+                src="https://www.youtube.com/embed/WCBV-C703YE?si=VTdnrm4NO2csCv8r" title="YouTube video player"
+                frameborder="10"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen></iframe>
+            <iframe width="60%" height="70%" src="https://www.youtube.com/embed/SfibvOE-OwU?si=lXv1D5anr8Z4Qw8b"
+                title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen></iframe>
+            <iframe width="60%" height="70%" src="https://www.youtube.com/embed/ESTXCPTFMd4?si=BftYiS-kGUWkQQKK"
+                title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen></iframe>
+        </section>
+
+        <!-- CREATING STUDY MATERIAL SECTION -->
+        <section>
+            <span>
+                <h2 style="margin-bottom: 30px;">Notes</h2>
+            </span>
+            <!-- <h1>Flickity - wrapAround</h1> -->
+
+            <!-- Flickity HTML init -->
+            <div class="carousel" data-flickity='{ "wrapAround": true }'>
+                <div class="carousel-cell"><a target="_blank"
+                        href="CEC-101_P1_Keywords, symbols basic I-O[150].pdf"><img src="Kinematics.jpeg"></a></div>
+                <div class="carousel-cell"><a target="_blank" href="CEC-101_P2_Data types and variables[193].pdf"><img
+                            src="images.jpeg"></a></div>
+                <div class="carousel-cell"><a target="_blank" href="CEC-101_P3_Operators[353].pdf"><img
+                            src="fluid_mechnaics.jpeg"></a></div>
+                <div class="carousel-cell"><a target="_blank" href="CEC-101_P7_References and pointers.pdf"><img
+                            src="light.png"></a></div>
+                <div class="carousel-cell"><a target="_blank" href="CEC-101_P8_Structures and classes.pdf"><img
+                            src="digestion.png"></a></div>
+                <div class="carousel-cell"><a target="_blank" href="CEC-101_P9_OOP concepts.pdf"><img
+                            src="carbon.png"></a></div>
+
+            </div>
+
+
+
+            <!-- CREATING FOUNDER'S SECTION -->
+            <section>
+                <h2
+                    style="color: white; font-size: 50px; font-family: 'Aoboshi One', Times, serif; padding-bottom: 26PX; margin-top: 50px; margin-bottom: 30px;">
+                    Our Founder</h2>
+                <img src="user.png"
+                    STYLE="BORDER: NONE; HEIGHT: 400PX; WIDTH: 310PX; box-shadow: 0 8px 8px rgb(252, 52, 52);">
+
+                <h3 style="    color: black;
+            padding: 18px;
+            font-size: 30px;">Vinayak Jat</h3>
+                <i class="fa-brands fa-youtube"></i>
+                <a href="https://www.youtube.com/" class="anchor">Youtube</a>&nbsp; &nbsp; | &nbsp;
+                <i class="fa-brands fa-facebook"></i>
+                <a href="https://www.facebook.com/" class="anchor">Facebook</a>&nbsp; &nbsp; | &nbsp;
+                <i class="fa-brands fa-square-instagram"></i>
+                <a href="https://www.Instagram.com/" class="anchor">Instagram</a>&nbsp; &nbsp; &nbsp;
+                <p style="color: #7E22CE; font-size: 18px;">Vinayak Jat is an Indian educator and YouTuber known for his educational content on the YouTube
+                    platform. He gained popularity for providing guidance and tutorials on various academic subjects,
+                    especially in the field of science and mathematics. Vinayak Jat has amassed a significant following
+                    due to his engaging teaching style, clear explanations, and commitment to helping students with
+                    their
+                    studies. His YouTube channel often features videos on topics such as physics, chemistry, and
+                    mathematics, and he covers content related to competitive exams in India, including JEE (Joint
+                    Entrance
+                    Examination) and NEET (National Eligibility cum Entrance Test). Vinayak Jat's educational videos
+                    have been appreciated for their clarity and effectiveness in helping students prepare for entrance
+                    exams
+                    and improve their understanding of complex subjects</p>
+            </section>
+    </main>
+
+    <!-- My work section -->
+    <div id="portfolio" style="background-color: rgb(211, 207, 207);">
+        <div class="container">
+            <h1 class="subtitle" style="color: black; font-weight: bold;">My Work</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="work-1.png">
+                    <div class="layer">
+                        <h3>Social Media App</h3>
+                        <p>The App connects you to the talented people around the world. Download it from play store and
+                            enjoy it.</p>
+                        <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="work-2.png">
+                    <div class="layer">
+                        <h3>Music App</h3>
+                        <p>The App connects you to the talented people around the world. Download it from play store and
+                            enjoy it.</p>
+                        <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="work-3.png">
+                    <div class="layer">
+                        <h3>Online Shopping App</h3>
+                        <p>The App connects you to the talented people around the world. Download it from play store and
+                            enjoy it.</p>
+                        <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+            </div>
+            <a href="#" class="btn" style="color: black; border: 3px solid rgb(244, 5, 45); font-weight: bold; font-size: 20px;">See more</a>
+        </div>
+    </div>
+<!-- Student review Section -->
+    <section>
+        <h1 style="color:black; text-align: center; margin-top: 20px;">Student Reviews</h1>
+        <div class="contain">
+            <div class="box1"><img class="review_image" src="xUx12img0723.jpg" alt=""></div>
+            <div class="box1"><img class="review_image" src="zPKjcsbb2limg07312min.jpg" alt=""></div>
+            <div class="box1"><img class="review_image" src="download.png" alt=""></div>
+            <div class="box1"><img class="review_image" src="OhlWNimg0726.jpg" alt=""></div>
+            <div class="box1"><img class="review_image" src="main-qimg-c736065f93f78e185eb35542e5427c86-lq.jpg" alt=""></div>
+            
+        </div>
+    </section>
+
+
+    <!-- Last Section -->
+    <div class="last_section">
+        <div class="first_line">
+            <h3 class="fnt" style="color: #ffffff">INDIA'S MOST LOVED PLATFORM ❤️</h3>
+        </div>
+
+        <div class="container1">
+            <div class="min">
+                <div class="containers">
+                    <i class="fa-solid fa-users"> 40,000+</i><br>
+                </div>
+                <div class="en">
+                    <p class="fnt"> HAPPY LEARNERS</p>
+                </div>
+            </div>
+
+            <div class="min">
+                <div class="containers">
+                    <i class="fa-solid fa-shield-heart"> 3 C R O R E+</i><br>
+                </div>
+                <div class="en">
+                    <p class="fnt">MONTHLY VIEWS</p>
+                </div>
+            </div>
+
+            <div class="min">
+                <div class="containers">
+                    <i class="fa-solid fa-link"> 100,000+</i><br>
+                </div>
+                <div class="en">
+                    <p class="fnt">NEW MONTHLY SUBSCRIBERS</p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+   
+
+
+    <!-- CREATING FOOTER SECTION -->
+    <footer>
+
+        <a href="#">FAQs</a>
+        <a href="contactform.html" target="_blank">Contact Us</a>
+        <a href="#">Terms Of Use</a>
+        <a href="#">Privacy Policy</a>
+        <a href="#">Refund Policy</a>
+
+    </footer>
+    <script src="PROJECT1.JS"></script>
+    <!-- Adding Bootstrap js link -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
